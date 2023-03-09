@@ -6,12 +6,14 @@
 //
 
 import SwiftUI
+import YiTVLinkSDK
 
 @main
 struct YiTVLinkSDKDemoAPPApp: App {
+    @StateObject var vm: AppViewModel = AppViewModel.mock
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(vm: vm)
         }
     }
 }
