@@ -7,19 +7,26 @@
 
 import SwiftUI
 import YiTVLinkSDK
+//import NWHTTPServer
 
 class AppViewModel: ObservableObject, YMLListener {
-    static var mock: AppViewModel {
-        AppViewModel(service: YMLNetwork.shared)
-    }
+    static var mock: AppViewModel = AppViewModel(service: YMLNetwork.shared)
+    
             
     private init(service: YMLNetwork) {
         self.netService = service
     }
     
-    var netService: YMLNetwork = .shared
-    
-    init() {}
+    var netService: YMLNetwork
+//  var server: HTTPServer?
+//    
+//    init() {
+//      self.server = try? HTTPServer(port:54321, queue: .global()) {req, res in
+//        print(req)
+//        res.send("hello world".data(using: .utf8)!)
+//      }
+//      server?.run()
+//    }
     
     @Published var devices: [DeviceInfo] = []
     @Published var logs: [Log] = [Log(content: "Sample string")]
