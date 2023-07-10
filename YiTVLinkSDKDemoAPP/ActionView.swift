@@ -6,54 +6,132 @@
 //
 
 import SwiftUI
+import YiTVLinkSDK
 
 struct ActionView: View {
-    @ObservedObject var vm: AppViewModel
-    var isTvConnected: Bool {vm.hasConnectedToDevice != nil}
+  @ObservedObject var vm: AppViewModel
+  @State var rcKey: RCKeyPacket.Key = .rck_home
+  var isTvConnected: Bool { vm.hasConnectedToDevice != nil }
     
-    var body: some View {
-        NavigationView{
-            VStack {
-                VStack{
-                    Image(systemName: isTvConnected ? "4k.tv.fill" : "4k.tv")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .imageScale(.large)
-                        .foregroundColor(isTvConnected ? .accentColor : .gray)
-                        .frame(width: 160, height: 160)
-                    if isTvConnected {
-                        Text("当前连接电视").padding()
-                    }
-                    Text("\(vm.hasConnectedToDevice?.devName ?? "没有电视连接")")
-                        .padding()
-                }
+  var body: some View {
+    NavigationView {
+      VStack {
+        ScrollView {
+          VStack {
+            HStack {
+              Image(systemName: isTvConnected ? "4k.tv.fill" : "4k.tv")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .imageScale(.large)
+                .foregroundColor(isTvConnected ? .accentColor : .gray)
+                .frame(width: 48, height: 48)
+                        
+              Text("\(vm.hasConnectedToDevice?.devName ?? "没有电视连接")")
                 .padding()
-                
-                Spacer()
-                
-                VStack {
-                    Button("测试发送TCP数据", action: {vm.testSendTcpData()})
-                        .padding()
-                        .disabled(!isTvConnected)
-                    Button("测试发送UDP命令", action: {vm.testSendGenneralCommand()})
-                        .padding()
-                        .disabled(!isTvConnected)
-                    Button("断开当前设备连接", action: {vm.disconnectCurrentDevice()})
-                        .padding()
-                        .buttonStyle(.borderedProminent)
-                        .disabled(!isTvConnected)
-                }
             }
-            .padding()
-            .navigationTitle("Actions")
+            Button(role: .destructive, action: {vm.disconnectCurrentDevice()}, label: {Text("断开当前设备连接")})
+              .padding()
+              .disabled(!isTvConnected)
+              .buttonStyle(.borderedProminent)
+            
+          }
+                  
+          HStack {
+            Button(action: { vm.testSendTcpData() }, label: { Text("发送TCP数据").lineLimit(1) })
+              .padding()
+              .disabled(!isTvConnected)
+              .buttonStyle(.borderedProminent)
+                
+            Button(action: { vm.testSendGenneralCommand() }, label: { Text("发送UDP命令").lineLimit(1) })
+              .padding()
+              .disabled(!isTvConnected)
+              .buttonStyle(.borderedProminent)
+          }
+          
+          // MARK: - 遥控按键
+          VStack {
+            Button(action: {
+              vm.sendRCKey(rcKey: RCKeyPacket(key: .rck_up))
+            }, label: { Text("遥控上键").lineLimit(1) })
+              .padding()
+              .disabled(!isTvConnected)
+              .buttonStyle(.borderedProminent)
+            
+            HStack {
+              Button(action: { vm.sendRCKey(rcKey: RCKeyPacket(key: .rck_left)) }, label: { Text("遥控左键").lineLimit(1) })
+                .padding()
+                .disabled(!isTvConnected)
+                .buttonStyle(.borderedProminent)
+                  
+              Button(action: { vm.sendRCKey(rcKey: RCKeyPacket(key: .rck_right)) }, label: { Text("遥控右键").lineLimit(1) })
+                .padding()
+                .disabled(!isTvConnected)
+                .buttonStyle(.borderedProminent)
+            }
+            
+            Button(action: {vm.sendRCKey(rcKey: RCKeyPacket(key: .rck_down))  }, label: { Text("遥控下键").lineLimit(1) })
+              .padding()
+              .disabled(!isTvConnected)
+              .buttonStyle(.borderedProminent)
+          }
+          
+          HStack{
+            Picker("RemoteKey", selection: $rcKey) {
+              ForEach(RCKeyPacket.Key.allCases, id: \.self) { rcKey in
+                let keyString = String(describing: rcKey)
+                Text(keyString)
+                  .tag(rcKey)
+              }
+              
+            }
+            Button(action: {
+              vm.sendRCKey(rcKey: RCKeyPacket(key: rcKey))
+            }, label: { Text("发送").lineLimit(1) })
+              .padding()
+//              .disabled(!isTvConnected)
+              .buttonStyle(.borderedProminent)
+          }
+          
+          VStack {
+            Button(action: {
+              vm.sendMouseEvent(event: MouseEventPacket(motion: .move, x: 0, y: -5, w: 0))
+            }, label: { Text("空鼠上键").lineLimit(1) })
+              .padding()
+              .disabled(!isTvConnected)
+              .buttonStyle(.borderedProminent)
+            
+            HStack {
+              Button(action: {
+                vm.sendMouseEvent(event: MouseEventPacket(motion: .move, x: -5, y: 0, w: 0))
+              }, label: { Text("空鼠左键").lineLimit(1) })
+                .padding()
+                .disabled(!isTvConnected)
+                .buttonStyle(.borderedProminent)
+                  
+              Button(action: { vm.sendMouseEvent(event: MouseEventPacket(motion: .move, x: 5, y: 0, w: 0)) }, label: { Text("空鼠右键").lineLimit(1) })
+                .padding()
+                .disabled(!isTvConnected)
+                .buttonStyle(.borderedProminent)
+            }
+            
+            Button(action: {vm.sendMouseEvent(event: MouseEventPacket(motion: .move, x: 0, y: 5, w: 0)) }, label: { Text("空鼠下键").lineLimit(1) })
+              .padding()
+              .disabled(!isTvConnected)
+              .buttonStyle(.borderedProminent)
+          }
+          
         }
-        .tabItem{Label("Action", systemImage: "playpause.circle")}
+        .navigationTitle("Actions")
+        
+        Text(vm.logs.last?.content ?? "No log").padding()
+      }
     }
+    .tabItem { Label("Action", systemImage: "play.fill") }
+  }
 }
 
 struct ActionView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView(vm: AppViewModel.mock)
-        
-    }
+  static var previews: some View {
+    ActionView(vm: AppViewModel.mock)
+  }
 }

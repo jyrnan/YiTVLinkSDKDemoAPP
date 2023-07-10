@@ -19,7 +19,7 @@ struct LogView: View {
             
         }
         .tabItem{
-            Label("Log", systemImage: "info.bubble")
+            Label("Log", systemImage: "info.circle.fill")
         }
     }
 }

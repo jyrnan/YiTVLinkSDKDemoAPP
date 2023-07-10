@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D228F57729C46BCA006894CE /* YiTVLinkSDK in Frameworks */ = {isa = PBXBuildFile; productRef = D228F57629C46BCA006894CE /* YiTVLinkSDK */; };
+		D2A5350229D3E24700303FBA /* DocumentPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A5350129D3E24700303FBA /* DocumentPickerView.swift */; };
+		D2D224AE29CAA6CD00762ABC /* YiTVLinkSDK in Frameworks */ = {isa = PBXBuildFile; productRef = D2D224AD29CAA6CD00762ABC /* YiTVLinkSDK */; };
 		D2D88E82299B33EC00979500 /* YiTVLinkSDKDemoAPPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D88E81299B33EC00979500 /* YiTVLinkSDKDemoAPPApp.swift */; };
 		D2D88E86299B33ED00979500 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2D88E85299B33ED00979500 /* Assets.xcassets */; };
 		D2D88E89299B33ED00979500 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2D88E88299B33ED00979500 /* Preview Assets.xcassets */; };
@@ -16,11 +17,15 @@
 		D2D88E9B299B36A000979500 /* ActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D88E95299B36A000979500 /* ActionView.swift */; };
 		D2D88E9C299B36A000979500 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D88E96299B36A000979500 /* ContentView.swift */; };
 		D2D88E9D299B36A000979500 /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D88E97299B36A000979500 /* AppViewModel.swift */; };
+		D2DB722B2A161B75004ADBE2 /* NetStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DB722A2A161B75004ADBE2 /* NetStatus.swift */; };
+		D2FEF4F029D293D8004E2CCC /* FileShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FEF4EF29D293D8004E2CCC /* FileShareView.swift */; };
+		D2FEF4F729D2C05A004E2CCC /* files2.leaf in Resources */ = {isa = PBXBuildFile; fileRef = D2FEF4F629D2C05A004E2CCC /* files2.leaf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D228F57429C46B63006894CE /* YiTVLinkSDK */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = YiTVLinkSDK; path = ../YiTVLinkSDK; sourceTree = "<group>"; };
+		D2A5350129D3E24700303FBA /* DocumentPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentPickerView.swift; sourceTree = "<group>"; };
 		D2D2248629C94FA000762ABC /* YiTVLinkSDKDemoAPP.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = YiTVLinkSDKDemoAPP.entitlements; sourceTree = "<group>"; };
+		D2D64A3A2A03CF2D00C3B07B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		D2D88E7E299B33EC00979500 /* YiTVLinkSDKDemoAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YiTVLinkSDKDemoAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2D88E81299B33EC00979500 /* YiTVLinkSDKDemoAPPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YiTVLinkSDKDemoAPPApp.swift; sourceTree = "<group>"; };
 		D2D88E85299B33ED00979500 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -30,6 +35,9 @@
 		D2D88E95299B36A000979500 /* ActionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionView.swift; sourceTree = "<group>"; };
 		D2D88E96299B36A000979500 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = ../../../MultiLink/YiMultiLink_IOS/YiMultiLink_iOS/YiTVLinkTestApp/ContentView.swift; sourceTree = "<group>"; };
 		D2D88E97299B36A000979500 /* AppViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
+		D2DB722A2A161B75004ADBE2 /* NetStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetStatus.swift; sourceTree = "<group>"; };
+		D2FEF4EF29D293D8004E2CCC /* FileShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileShareView.swift; sourceTree = "<group>"; };
+		D2FEF4F629D2C05A004E2CCC /* files2.leaf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = files2.leaf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D228F57729C46BCA006894CE /* YiTVLinkSDK in Frameworks */,
+				D2D224AE29CAA6CD00762ABC /* YiTVLinkSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,7 +55,6 @@
 		D228F57329C46B63006894CE /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				D228F57429C46B63006894CE /* YiTVLinkSDK */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -59,16 +66,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D2A653EB29B9D30A00EB6833 /* New Group */ = {
+		D2A5350029D3E21F00303FBA /* FileServerView */ = {
 			isa = PBXGroup;
 			children = (
+				D2FEF4EF29D293D8004E2CCC /* FileShareView.swift */,
+				D2A5350129D3E24700303FBA /* DocumentPickerView.swift */,
 			);
-			path = "New Group";
+			path = FileServerView;
 			sourceTree = "<group>";
 		};
 		D2D88E75299B33EC00979500 = {
 			isa = PBXGroup;
 			children = (
+				D2FEF4F429D2C05A004E2CCC /* Resources */,
 				D228F57329C46B63006894CE /* Packages */,
 				D2D88E80299B33EC00979500 /* YiTVLinkSDKDemoAPP */,
 				D2D88E7F299B33EC00979500 /* Products */,
@@ -87,13 +97,15 @@
 		D2D88E80299B33EC00979500 /* YiTVLinkSDKDemoAPP */ = {
 			isa = PBXGroup;
 			children = (
+				D2D64A3A2A03CF2D00C3B07B /* Info.plist */,
 				D2D2248629C94FA000762ABC /* YiTVLinkSDKDemoAPP.entitlements */,
 				D2D88E81299B33EC00979500 /* YiTVLinkSDKDemoAPPApp.swift */,
 				D2D88E97299B36A000979500 /* AppViewModel.swift */,
-				D2D88E95299B36A000979500 /* ActionView.swift */,
-				D2A653EB29B9D30A00EB6833 /* New Group */,
 				D2D88E96299B36A000979500 /* ContentView.swift */,
 				D2D88E92299B369F00979500 /* DeviceView.swift */,
+				D2D88E95299B36A000979500 /* ActionView.swift */,
+				D2DB722A2A161B75004ADBE2 /* NetStatus.swift */,
+				D2A5350029D3E21F00303FBA /* FileServerView */,
 				D2D88E94299B36A000979500 /* LogView.swift */,
 				D2D88E85299B33ED00979500 /* Assets.xcassets */,
 				D2D88E87299B33ED00979500 /* Preview Content */,
@@ -107,6 +119,22 @@
 				D2D88E88299B33ED00979500 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D2FEF4F429D2C05A004E2CCC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D2FEF4F529D2C05A004E2CCC /* Views */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D2FEF4F529D2C05A004E2CCC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D2FEF4F629D2C05A004E2CCC /* files2.leaf */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +154,7 @@
 			);
 			name = YiTVLinkSDKDemoAPP;
 			packageProductDependencies = (
-				D228F57629C46BCA006894CE /* YiTVLinkSDK */,
+				D2D224AD29CAA6CD00762ABC /* YiTVLinkSDK */,
 			);
 			productName = YiTVLinkSDKDemoAPP;
 			productReference = D2D88E7E299B33EC00979500 /* YiTVLinkSDKDemoAPP.app */;
@@ -172,6 +200,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2FEF4F729D2C05A004E2CCC /* files2.leaf in Resources */,
 				D2D88E89299B33ED00979500 /* Preview Assets.xcassets in Resources */,
 				D2D88E86299B33ED00979500 /* Assets.xcassets in Resources */,
 			);
@@ -187,9 +216,12 @@
 				D2D88E9B299B36A000979500 /* ActionView.swift in Sources */,
 				D2D88E9D299B36A000979500 /* AppViewModel.swift in Sources */,
 				D2D88E9C299B36A000979500 /* ContentView.swift in Sources */,
+				D2A5350229D3E24700303FBA /* DocumentPickerView.swift in Sources */,
 				D2D88E9A299B36A000979500 /* LogView.swift in Sources */,
 				D2D88E82299B33EC00979500 /* YiTVLinkSDKDemoAPPApp.swift in Sources */,
 				D2D88E98299B36A000979500 /* DeviceView.swift in Sources */,
+				D2DB722B2A161B75004ADBE2 /* NetStatus.swift in Sources */,
+				D2FEF4F029D293D8004E2CCC /* FileShareView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,11 +356,15 @@
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = M9X4Q7NPJT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YiTVLinkSDKDemoAPP/Info.plist;
+				INFOPLIST_KEY_NSLocationUsageDescription = "Need location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -358,11 +394,15 @@
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = M9X4Q7NPJT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YiTVLinkSDKDemoAPP/Info.plist;
+				INFOPLIST_KEY_NSLocationUsageDescription = "Need location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -402,7 +442,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		D228F57629C46BCA006894CE /* YiTVLinkSDK */ = {
+		D2D224AD29CAA6CD00762ABC /* YiTVLinkSDK */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = YiTVLinkSDK;
 		};
