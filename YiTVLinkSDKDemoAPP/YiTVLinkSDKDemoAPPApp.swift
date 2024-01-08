@@ -19,7 +19,7 @@ struct YiTVLinkSDKDemoAPPApp: App {
         }
         .onChange(of: scenePhase) { phase in
             if phase == .background {
-//                vm.netService.stopFileSharing()
+                vm.netService.stopFileSharing()
             }
         }
     }

@@ -47,7 +47,7 @@ struct FileShareView: View {
           ToolbarItem(placement: .navigationBarTrailing) {
             Button(action: {
               vm.netService.startFileSharing()
-              vm.isSharing = true
+//              vm.isSharing = true
               
             }, label:{
               Image(systemName: "play.rectangle.on.rectangle")

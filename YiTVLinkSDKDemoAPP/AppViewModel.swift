@@ -73,8 +73,16 @@ class AppViewModel: NSObject, ObservableObject, YMLListener, CLLocationManagerDe
     case "WIFIDISCONNECTED":
       Task {
        await setWifiName(name: "")
+          print(#line, #function, "Wifi disconnected")
       }
-        
+    case "FILE_SERVER_STARTED":
+        Task{ @MainActor in
+            isSharing = true
+        }
+    case "FILE_SERVER_STOPPED":
+        Task{ @MainActor in
+            isSharing = false
+        }
     default:
       break
     }
@@ -91,12 +99,12 @@ class AppViewModel: NSObject, ObservableObject, YMLListener, CLLocationManagerDe
     updateLog(with: error.localizedDescription)
   }
     
-  @DeviceInfoManager
+  @DeviceInfoManagerActor
     func seachDevice() {
     netService.searchDeviceInfo(searchListener: self)
   }
     
-  @DeviceInfoManager
+  @DeviceInfoManagerActor
     func connectTo(_ device: DeviceInfo) {
     guard device != hasConnectedToDevice else { return }
     willConnectToDevice = device
