@@ -123,7 +123,6 @@ struct ActionView: View {
         }
         .navigationTitle("Actions")
         
-        Text(vm.logs.last?.content ?? "No log").padding()
       }
     }
     .tabItem { Label("Action", systemImage: "play.fill") }

@@ -31,7 +31,7 @@ struct DeviceView: View {
                 if vm.hasConnectedToDevice != nil {
                     Text("connected to: \(vm.hasConnectedToDevice!.devName)")
                 }
-              Text("下拉刷新设备").padding()
+                LogView(vm: vm)
             }
             .navigationTitle(Text("Devices"))
             .toolbar {
@@ -77,8 +77,6 @@ struct DeviceView: View {
     }
 }
 
-struct DeviceView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView(vm: AppViewModel.mock)
-    }
+#Preview {
+    DeviceView(vm: AppViewModel.preview)
 }

@@ -7,25 +7,72 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D24F54CE2CCB432400E89045 /* LocalServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24F54CD2CCB431000E89045 /* LocalServerManager.swift */; };
+		D24F54EF2CCB444600E89045 /* GCDWebServerURLEncodedFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D24F54E32CCB444600E89045 /* GCDWebServerURLEncodedFormRequest.m */; };
+		D24F54F02CCB444600E89045 /* GCDWebServerErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D24F54E82CCB444600E89045 /* GCDWebServerErrorResponse.m */; };
+		D24F54F12CCB444600E89045 /* GCDWebServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D24F54D82CCB444600E89045 /* GCDWebServerRequest.m */; };
+		D24F54F22CCB444600E89045 /* GCDWebServerDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D24F54DD2CCB444600E89045 /* GCDWebServerDataRequest.m */; };
+		D24F54F32CCB444600E89045 /* GCDWebServerStreamedResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D24F54EC2CCB444600E89045 /* GCDWebServerStreamedResponse.m */; };
+		D24F54F42CCB444600E89045 /* GCDWebServerDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D24F54E62CCB444600E89045 /* GCDWebServerDataResponse.m */; };
+		D24F54F52CCB444600E89045 /* GCDWebServerFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D24F54EA2CCB444600E89045 /* GCDWebServerFileResponse.m */; };
+		D24F54F62CCB444600E89045 /* GCDWebServerFileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D24F54DF2CCB444600E89045 /* GCDWebServerFileRequest.m */; };
+		D24F54F72CCB444600E89045 /* GCDWebServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = D24F54D22CCB444600E89045 /* GCDWebServerConnection.m */; };
+		D24F54F82CCB444600E89045 /* GCDWebServerFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = D24F54D42CCB444600E89045 /* GCDWebServerFunctions.m */; };
+		D24F54F92CCB444600E89045 /* GCDWebServer.m in Sources */ = {isa = PBXBuildFile; fileRef = D24F54D02CCB444600E89045 /* GCDWebServer.m */; };
+		D24F54FA2CCB444600E89045 /* GCDWebServerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D24F54DA2CCB444600E89045 /* GCDWebServerResponse.m */; };
+		D24F54FB2CCB444600E89045 /* GCDWebServerMultiPartFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D24F54E12CCB444600E89045 /* GCDWebServerMultiPartFormRequest.m */; };
+		D24F55002CCCAA8800E89045 /* AppViewModel+LocalServerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24F54FF2CCCAA6D00E89045 /* AppViewModel+LocalServerDelegate.swift */; };
 		D2A5350229D3E24700303FBA /* DocumentPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A5350129D3E24700303FBA /* DocumentPickerView.swift */; };
 		D2D224AE29CAA6CD00762ABC /* YiTVLinkSDK in Frameworks */ = {isa = PBXBuildFile; productRef = D2D224AD29CAA6CD00762ABC /* YiTVLinkSDK */; };
+		D2D721892C3B8BD600DFA1C9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D721882C3B8BD600DFA1C9 /* ContentView.swift */; };
 		D2D88E82299B33EC00979500 /* YiTVLinkSDKDemoAPPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D88E81299B33EC00979500 /* YiTVLinkSDKDemoAPPApp.swift */; };
 		D2D88E86299B33ED00979500 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2D88E85299B33ED00979500 /* Assets.xcassets */; };
 		D2D88E89299B33ED00979500 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2D88E88299B33ED00979500 /* Preview Assets.xcassets */; };
 		D2D88E98299B36A000979500 /* DeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D88E92299B369F00979500 /* DeviceView.swift */; };
 		D2D88E9A299B36A000979500 /* LogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D88E94299B36A000979500 /* LogView.swift */; };
 		D2D88E9B299B36A000979500 /* ActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D88E95299B36A000979500 /* ActionView.swift */; };
-		D2D88E9C299B36A000979500 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D88E96299B36A000979500 /* ContentView.swift */; };
 		D2D88E9D299B36A000979500 /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D88E97299B36A000979500 /* AppViewModel.swift */; };
-		D2DB722B2A161B75004ADBE2 /* NetStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DB722A2A161B75004ADBE2 /* NetStatus.swift */; };
+		D2DB722B2A161B75004ADBE2 /* NetStatusManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DB722A2A161B75004ADBE2 /* NetStatusManager.swift */; };
 		D2FEF4F029D293D8004E2CCC /* FileShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FEF4EF29D293D8004E2CCC /* FileShareView.swift */; };
 		D2FEF4F729D2C05A004E2CCC /* files2.leaf in Resources */ = {isa = PBXBuildFile; fileRef = D2FEF4F629D2C05A004E2CCC /* files2.leaf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D24F54CC2CCB426C00E89045 /* YiTVLinkSDKDemoAPP-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YiTVLinkSDKDemoAPP-Bridging-Header.h"; sourceTree = "<group>"; };
+		D24F54CD2CCB431000E89045 /* LocalServerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalServerManager.swift; sourceTree = "<group>"; };
+		D24F54CF2CCB444600E89045 /* GCDWebServer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDWebServer.h; sourceTree = "<group>"; };
+		D24F54D02CCB444600E89045 /* GCDWebServer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDWebServer.m; sourceTree = "<group>"; };
+		D24F54D12CCB444600E89045 /* GCDWebServerConnection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDWebServerConnection.h; sourceTree = "<group>"; };
+		D24F54D22CCB444600E89045 /* GCDWebServerConnection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerConnection.m; sourceTree = "<group>"; };
+		D24F54D32CCB444600E89045 /* GCDWebServerFunctions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDWebServerFunctions.h; sourceTree = "<group>"; };
+		D24F54D42CCB444600E89045 /* GCDWebServerFunctions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerFunctions.m; sourceTree = "<group>"; };
+		D24F54D52CCB444600E89045 /* GCDWebServerHTTPStatusCodes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDWebServerHTTPStatusCodes.h; sourceTree = "<group>"; };
+		D24F54D62CCB444600E89045 /* GCDWebServerPrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDWebServerPrivate.h; sourceTree = "<group>"; };
+		D24F54D72CCB444600E89045 /* GCDWebServerRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDWebServerRequest.h; sourceTree = "<group>"; };
+		D24F54D82CCB444600E89045 /* GCDWebServerRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerRequest.m; sourceTree = "<group>"; };
+		D24F54D92CCB444600E89045 /* GCDWebServerResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDWebServerResponse.h; sourceTree = "<group>"; };
+		D24F54DA2CCB444600E89045 /* GCDWebServerResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerResponse.m; sourceTree = "<group>"; };
+		D24F54DC2CCB444600E89045 /* GCDWebServerDataRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDWebServerDataRequest.h; sourceTree = "<group>"; };
+		D24F54DD2CCB444600E89045 /* GCDWebServerDataRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerDataRequest.m; sourceTree = "<group>"; };
+		D24F54DE2CCB444600E89045 /* GCDWebServerFileRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDWebServerFileRequest.h; sourceTree = "<group>"; };
+		D24F54DF2CCB444600E89045 /* GCDWebServerFileRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerFileRequest.m; sourceTree = "<group>"; };
+		D24F54E02CCB444600E89045 /* GCDWebServerMultiPartFormRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDWebServerMultiPartFormRequest.h; sourceTree = "<group>"; };
+		D24F54E12CCB444600E89045 /* GCDWebServerMultiPartFormRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerMultiPartFormRequest.m; sourceTree = "<group>"; };
+		D24F54E22CCB444600E89045 /* GCDWebServerURLEncodedFormRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDWebServerURLEncodedFormRequest.h; sourceTree = "<group>"; };
+		D24F54E32CCB444600E89045 /* GCDWebServerURLEncodedFormRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerURLEncodedFormRequest.m; sourceTree = "<group>"; };
+		D24F54E52CCB444600E89045 /* GCDWebServerDataResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDWebServerDataResponse.h; sourceTree = "<group>"; };
+		D24F54E62CCB444600E89045 /* GCDWebServerDataResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerDataResponse.m; sourceTree = "<group>"; };
+		D24F54E72CCB444600E89045 /* GCDWebServerErrorResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDWebServerErrorResponse.h; sourceTree = "<group>"; };
+		D24F54E82CCB444600E89045 /* GCDWebServerErrorResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerErrorResponse.m; sourceTree = "<group>"; };
+		D24F54E92CCB444600E89045 /* GCDWebServerFileResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDWebServerFileResponse.h; sourceTree = "<group>"; };
+		D24F54EA2CCB444600E89045 /* GCDWebServerFileResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerFileResponse.m; sourceTree = "<group>"; };
+		D24F54EB2CCB444600E89045 /* GCDWebServerStreamedResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDWebServerStreamedResponse.h; sourceTree = "<group>"; };
+		D24F54EC2CCB444600E89045 /* GCDWebServerStreamedResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerStreamedResponse.m; sourceTree = "<group>"; };
+		D24F54FF2CCCAA6D00E89045 /* AppViewModel+LocalServerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppViewModel+LocalServerDelegate.swift"; sourceTree = "<group>"; };
 		D2A5350129D3E24700303FBA /* DocumentPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentPickerView.swift; sourceTree = "<group>"; };
 		D2D2248629C94FA000762ABC /* YiTVLinkSDKDemoAPP.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = YiTVLinkSDKDemoAPP.entitlements; sourceTree = "<group>"; };
 		D2D64A3A2A03CF2D00C3B07B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D2D721882C3B8BD600DFA1C9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D2D88E7E299B33EC00979500 /* YiTVLinkSDKDemoAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YiTVLinkSDKDemoAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2D88E81299B33EC00979500 /* YiTVLinkSDKDemoAPPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YiTVLinkSDKDemoAPPApp.swift; sourceTree = "<group>"; };
 		D2D88E85299B33ED00979500 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -33,9 +80,8 @@
 		D2D88E92299B369F00979500 /* DeviceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceView.swift; sourceTree = "<group>"; };
 		D2D88E94299B36A000979500 /* LogView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogView.swift; sourceTree = "<group>"; };
 		D2D88E95299B36A000979500 /* ActionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionView.swift; sourceTree = "<group>"; };
-		D2D88E96299B36A000979500 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = ../../../MultiLink/YiMultiLink_IOS/YiMultiLink_iOS/YiTVLinkTestApp/ContentView.swift; sourceTree = "<group>"; };
 		D2D88E97299B36A000979500 /* AppViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
-		D2DB722A2A161B75004ADBE2 /* NetStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetStatus.swift; sourceTree = "<group>"; };
+		D2DB722A2A161B75004ADBE2 /* NetStatusManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetStatusManager.swift; sourceTree = "<group>"; };
 		D2FEF4EF29D293D8004E2CCC /* FileShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileShareView.swift; sourceTree = "<group>"; };
 		D2FEF4F629D2C05A004E2CCC /* files2.leaf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = files2.leaf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,18 +98,94 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D228F57329C46B63006894CE /* Packages */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Packages;
-			sourceTree = "<group>";
-		};
 		D228F57529C46BCA006894CE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D24F54DB2CCB444600E89045 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D24F54CF2CCB444600E89045 /* GCDWebServer.h */,
+				D24F54D02CCB444600E89045 /* GCDWebServer.m */,
+				D24F54D12CCB444600E89045 /* GCDWebServerConnection.h */,
+				D24F54D22CCB444600E89045 /* GCDWebServerConnection.m */,
+				D24F54D32CCB444600E89045 /* GCDWebServerFunctions.h */,
+				D24F54D42CCB444600E89045 /* GCDWebServerFunctions.m */,
+				D24F54D52CCB444600E89045 /* GCDWebServerHTTPStatusCodes.h */,
+				D24F54D62CCB444600E89045 /* GCDWebServerPrivate.h */,
+				D24F54D72CCB444600E89045 /* GCDWebServerRequest.h */,
+				D24F54D82CCB444600E89045 /* GCDWebServerRequest.m */,
+				D24F54D92CCB444600E89045 /* GCDWebServerResponse.h */,
+				D24F54DA2CCB444600E89045 /* GCDWebServerResponse.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		D24F54E42CCB444600E89045 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				D24F54DC2CCB444600E89045 /* GCDWebServerDataRequest.h */,
+				D24F54DD2CCB444600E89045 /* GCDWebServerDataRequest.m */,
+				D24F54DE2CCB444600E89045 /* GCDWebServerFileRequest.h */,
+				D24F54DF2CCB444600E89045 /* GCDWebServerFileRequest.m */,
+				D24F54E02CCB444600E89045 /* GCDWebServerMultiPartFormRequest.h */,
+				D24F54E12CCB444600E89045 /* GCDWebServerMultiPartFormRequest.m */,
+				D24F54E22CCB444600E89045 /* GCDWebServerURLEncodedFormRequest.h */,
+				D24F54E32CCB444600E89045 /* GCDWebServerURLEncodedFormRequest.m */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		D24F54ED2CCB444600E89045 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				D24F54E52CCB444600E89045 /* GCDWebServerDataResponse.h */,
+				D24F54E62CCB444600E89045 /* GCDWebServerDataResponse.m */,
+				D24F54E72CCB444600E89045 /* GCDWebServerErrorResponse.h */,
+				D24F54E82CCB444600E89045 /* GCDWebServerErrorResponse.m */,
+				D24F54E92CCB444600E89045 /* GCDWebServerFileResponse.h */,
+				D24F54EA2CCB444600E89045 /* GCDWebServerFileResponse.m */,
+				D24F54EB2CCB444600E89045 /* GCDWebServerStreamedResponse.h */,
+				D24F54EC2CCB444600E89045 /* GCDWebServerStreamedResponse.m */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		D24F54EE2CCB444600E89045 /* GCDWebServer */ = {
+			isa = PBXGroup;
+			children = (
+				D24F54DB2CCB444600E89045 /* Core */,
+				D24F54E42CCB444600E89045 /* Requests */,
+				D24F54ED2CCB444600E89045 /* Responses */,
+			);
+			path = GCDWebServer;
+			sourceTree = "<group>";
+		};
+		D24F54FC2CCC82E400E89045 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D2D88E97299B36A000979500 /* AppViewModel.swift */,
+				D24F54FF2CCCAA6D00E89045 /* AppViewModel+LocalServerDelegate.swift */,
+				D24F54CD2CCB431000E89045 /* LocalServerManager.swift */,
+				D2DB722A2A161B75004ADBE2 /* NetStatusManager.swift */,
+				D24F54EE2CCB444600E89045 /* GCDWebServer */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D24F54FD2CCC82F900E89045 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D2A5350029D3E21F00303FBA /* FileServerView */,
+				D2D721882C3B8BD600DFA1C9 /* ContentView.swift */,
+				D2D88E92299B369F00979500 /* DeviceView.swift */,
+				D2D88E95299B36A000979500 /* ActionView.swift */,
+				D2D88E94299B36A000979500 /* LogView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		D2A5350029D3E21F00303FBA /* FileServerView */ = {
@@ -79,7 +201,6 @@
 			isa = PBXGroup;
 			children = (
 				D2FEF4F429D2C05A004E2CCC /* Resources */,
-				D228F57329C46B63006894CE /* Packages */,
 				D2D88E80299B33EC00979500 /* YiTVLinkSDKDemoAPP */,
 				D2D88E7F299B33EC00979500 /* Products */,
 				D228F57529C46BCA006894CE /* Frameworks */,
@@ -97,16 +218,12 @@
 		D2D88E80299B33EC00979500 /* YiTVLinkSDKDemoAPP */ = {
 			isa = PBXGroup;
 			children = (
+				D2D88E81299B33EC00979500 /* YiTVLinkSDKDemoAPPApp.swift */,
+				D24F54CC2CCB426C00E89045 /* YiTVLinkSDKDemoAPP-Bridging-Header.h */,
 				D2D64A3A2A03CF2D00C3B07B /* Info.plist */,
 				D2D2248629C94FA000762ABC /* YiTVLinkSDKDemoAPP.entitlements */,
-				D2D88E81299B33EC00979500 /* YiTVLinkSDKDemoAPPApp.swift */,
-				D2D88E97299B36A000979500 /* AppViewModel.swift */,
-				D2D88E96299B36A000979500 /* ContentView.swift */,
-				D2D88E92299B369F00979500 /* DeviceView.swift */,
-				D2D88E95299B36A000979500 /* ActionView.swift */,
-				D2DB722A2A161B75004ADBE2 /* NetStatus.swift */,
-				D2A5350029D3E21F00303FBA /* FileServerView */,
-				D2D88E94299B36A000979500 /* LogView.swift */,
+				D24F54FC2CCC82E400E89045 /* Model */,
+				D24F54FD2CCC82F900E89045 /* View */,
 				D2D88E85299B33ED00979500 /* Assets.xcassets */,
 				D2D88E87299B33ED00979500 /* Preview Content */,
 			);
@@ -215,12 +332,27 @@
 			files = (
 				D2D88E9B299B36A000979500 /* ActionView.swift in Sources */,
 				D2D88E9D299B36A000979500 /* AppViewModel.swift in Sources */,
-				D2D88E9C299B36A000979500 /* ContentView.swift in Sources */,
 				D2A5350229D3E24700303FBA /* DocumentPickerView.swift in Sources */,
+				D24F54EF2CCB444600E89045 /* GCDWebServerURLEncodedFormRequest.m in Sources */,
+				D24F54F02CCB444600E89045 /* GCDWebServerErrorResponse.m in Sources */,
+				D24F54F12CCB444600E89045 /* GCDWebServerRequest.m in Sources */,
+				D24F54F22CCB444600E89045 /* GCDWebServerDataRequest.m in Sources */,
+				D24F54F32CCB444600E89045 /* GCDWebServerStreamedResponse.m in Sources */,
+				D24F54F42CCB444600E89045 /* GCDWebServerDataResponse.m in Sources */,
+				D24F54F52CCB444600E89045 /* GCDWebServerFileResponse.m in Sources */,
+				D24F54F62CCB444600E89045 /* GCDWebServerFileRequest.m in Sources */,
+				D24F54F72CCB444600E89045 /* GCDWebServerConnection.m in Sources */,
+				D24F54F82CCB444600E89045 /* GCDWebServerFunctions.m in Sources */,
+				D24F54F92CCB444600E89045 /* GCDWebServer.m in Sources */,
+				D24F55002CCCAA8800E89045 /* AppViewModel+LocalServerDelegate.swift in Sources */,
+				D24F54FA2CCB444600E89045 /* GCDWebServerResponse.m in Sources */,
+				D24F54FB2CCB444600E89045 /* GCDWebServerMultiPartFormRequest.m in Sources */,
 				D2D88E9A299B36A000979500 /* LogView.swift in Sources */,
 				D2D88E82299B33EC00979500 /* YiTVLinkSDKDemoAPPApp.swift in Sources */,
+				D2D721892C3B8BD600DFA1C9 /* ContentView.swift in Sources */,
 				D2D88E98299B36A000979500 /* DeviceView.swift in Sources */,
-				D2DB722B2A161B75004ADBE2 /* NetStatus.swift in Sources */,
+				D24F54CE2CCB432400E89045 /* LocalServerManager.swift in Sources */,
+				D2DB722B2A161B75004ADBE2 /* NetStatusManager.swift in Sources */,
 				D2FEF4F029D293D8004E2CCC /* FileShareView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -373,6 +505,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "YiTVLinkSDKDemoAPP/YiTVLinkSDKDemoAPP-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -409,6 +542,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "YiTVLinkSDKDemoAPP/YiTVLinkSDKDemoAPP-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

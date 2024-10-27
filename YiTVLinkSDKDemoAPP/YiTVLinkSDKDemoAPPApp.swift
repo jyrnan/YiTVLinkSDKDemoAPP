@@ -11,15 +11,17 @@ import YiTVLinkSDK
 
 @main
 struct YiTVLinkSDKDemoAPPApp: App {
-    @StateObject var vm: AppViewModel = AppViewModel.mock
+    @StateObject var vm: AppViewModel = AppViewModel(service: YMLNetwork.shared)
+    @State var localServer: LocalServerManager = .init()
     @Environment(\.scenePhase) private var scenePhase
+    
     var body: some Scene {
         WindowGroup {
             ContentView(vm: vm)
         }
         .onChange(of: scenePhase) { phase in
             if phase == .background {
-                vm.netService.stopFileSharing()
+//                vm.netService.stopFileSharing()
             }
         }
     }

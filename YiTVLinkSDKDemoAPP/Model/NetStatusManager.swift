@@ -8,10 +8,10 @@
 import Foundation
 import Network
 
-class NetStatus {
+class NetStatusManager {
   // MARK: - Properties
     
-  static let shared = NetStatus()
+  static let shared = NetStatusManager()
     
   var monitor: NWPathMonitor?
     
